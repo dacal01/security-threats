@@ -4,7 +4,6 @@ const app = express();
 const PORT = 8080;
 const exec = require('child_process').exec;
 
-
 app.get('/check-updates', (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
   const appVersionFile= req.query.versionFile;
