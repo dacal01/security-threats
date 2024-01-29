@@ -10,6 +10,7 @@ RUN npm install
 RUN npm run build
 RUN printf "node index.js &\ncd server\nnode index.js\n" > entrypoint.sh
 
+
 WORKDIR /usr/app/server
 RUN rm package-lock.json
 RUN npm install
